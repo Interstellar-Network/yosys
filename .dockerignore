@@ -1,12 +1,9 @@
-.editorconfig
-.gitignore
-.gitmodules
-.github
-.git
-Dockerfile
-README.md
-manual
-guidelines
-CodeOfConduct
-.travis
-.travis.yml
+# whitelist instead of blacklist
+# that way COPY is properly cached which is useful when dev/testing the dockerfile
+
+# Ignore everything
+*
+
+# Allow files and folders with a pattern starting with !
+!build/yosys-0.1.1-Linux.deb
+!tests/deb

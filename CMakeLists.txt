@@ -349,6 +349,9 @@ add_library(libyosys
     ${YOSYS_SRCS}
 )
 
+# else the final .so is "liblibyosys.so"
+set_target_properties(libyosys PROPERTIES PREFIX "")
+
 target_include_directories(libyosys
     PUBLIC
     # needed for #include <kernel/yosys.h> (eg in verilog_compiler.cpp)
@@ -536,6 +539,10 @@ target_link_libraries(yosys_exe
     PRIVATE
     libyosys
 )
+
+################################################################################
+
+include(cmake/install.cmake)
 
 ################################################################################
 
