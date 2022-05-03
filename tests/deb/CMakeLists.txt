@@ -1,4 +1,6 @@
 ################################################################################
+# DO NOT run as part of the tests
+# This is meant as a "packaging test" to be used with the Dockerfiles in this folder
 
 # c++17: needed for string_view
 # c++20: why not?
@@ -11,7 +13,9 @@ cmake_minimum_required(VERSION 3.22)
 
 find_library(YOSYS_LIBRARY yosys REQUIRED)
 find_path(YOSYS_INCLUDE_DIR kernel/yosys.h REQUIRED
-          PATH_SUFFIXES yosys)
+        # SHOULD be installed into "/usr/include/yosys/kernel/yosys.h"
+        # so remove "yosys" part
+        PATH_SUFFIXES yosys)
 
 ################################################################################
 

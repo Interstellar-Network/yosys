@@ -13,6 +13,7 @@ __pycache__
 /qtcreator.config
 /qtcreator.creator
 /qtcreator.creator.user
+/.vscode/
 /coverage.info
 /coverage_html
 /Makefile.conf

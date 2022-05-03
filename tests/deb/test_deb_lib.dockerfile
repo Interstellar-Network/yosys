@@ -1,8 +1,6 @@
 ################################################################################
-
-# podman build -f test_deb_lib.dockerfile -t yosys_lib:dev .
-# NOTE: it CAN work with Docker but it less than ideal b/c it can not reuse the host's cache
-# b/c docker build has no support for volume contrary to podman/buildah
+# (from root)
+# podman build -f tests/deb/test_deb_lib.dockerfile -t yosys_lib:dev .
 # podman run -it --rm yosys_lib:dev
 
 FROM yosys:dev as builder
