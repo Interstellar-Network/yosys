@@ -5,5 +5,5 @@
 *
 
 # Allow files and folders with a pattern starting with !
-!build/yosys-0.1.1-Linux.deb
+!build/yosys-*-Linux.deb
 !tests/deb
