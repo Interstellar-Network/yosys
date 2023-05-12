@@ -13,6 +13,7 @@ __pycache__
 /qtcreator.config
 /qtcreator.creator
 /qtcreator.creator.user
+/.vscode/
 /coverage.info
 /coverage_html
 /Makefile.conf
@@ -44,3 +45,5 @@ __pycache__
 /tests/unit/bintest/
 /tests/unit/objtest/
 /tests/ystests
+
+/build*/
