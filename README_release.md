@@ -3,10 +3,10 @@
 - `mkdir build && cd build`
 - `cmake .. -DCMAKE_BUILD_TYPE=Release [-GNinja]`
 - `cmake --build .`
+- `cpack`
 - CHECK:
   - cf tests/deb/test_deb_exe.dockerfile comments
   - cf tests/deb/test_deb_lib.dockerfile; NOTE this one will recompile from scratch, it is mostly a CI-like
-- `cpack`
 
 ## dev(ie use the .deb)
 

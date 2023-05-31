@@ -267,7 +267,8 @@ set(YOSYS_SRCS
 
     # ${PROJECT_SOURCE_DIR}/passes/pmgen/ice40_dsp.cc
     # ${PROJECT_SOURCE_DIR}/passes/pmgen/ice40_wrapcarry.cc
-    # ${PROJECT_SOURCE_DIR}/passes/pmgen/peepopt.cc
+    ${PROJECT_SOURCE_DIR}/passes/pmgen/peepopt.cc
+
     # ${PROJECT_SOURCE_DIR}/passes/pmgen/test_pmgen.cc
     # ${PROJECT_SOURCE_DIR}/passes/pmgen/xilinx_dsp.cc
     # ${PROJECT_SOURCE_DIR}/passes/pmgen/xilinx_srl.cc
